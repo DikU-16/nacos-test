@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: nacos-provider
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: c74e1665-a0b6-41a4-9725-6379cee64708
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: c74e1665-a0b6-41a4-9725-6379cee64708
+        file-extension: yaml
+        group: DIKU
